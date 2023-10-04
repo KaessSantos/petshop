@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+@import "assets/font";
+@import "assets/colors";
+@import "assets/header";
+@import "assets/section";
+
+
+body{
+    font-family:poppins-light;
+    width: 100%;
+    position: relative;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+}
+
+li{
+    list-style: none;
+}

@@ -1,0 +1,229 @@
+.sectionOne{
+    background-color: $section-backgroundOne;
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    h2{
+        font-family: poppins-regular;
+        padding: 10px 0 0 0;
+        font-size: 1.4rem;
+        margin-top: 25px;
+    }
+
+    p{
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+}
+
+.section-galery{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+
+.card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+
+    div{
+        max-width: 200px;
+        height: 150px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius: 10px;
+        overflow: hidden;
+
+        img{
+            width: 100%;
+            cursor: pointer;
+            transition: ease all 0.5s;
+
+        }
+
+        img:hover{
+            transform: scale(1.5);
+        }
+    }
+}
+
+.btn-acessar{
+    font-family: poppins-semiBold;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 50px;
+    background-color: $btn-background;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: $black-primary;
+}
+
+.btn-acessar:hover{
+    background-color: #f5de81c4;
+}
+
+
+@media screen and (max-width: 600px){
+    .card-header{
+        flex-direction: column;
+    }
+
+    .sectionOne{
+        h2{
+            padding: 0;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        p{
+            font-size: 0.7rem;
+            text-align: center;
+        }
+    }
+
+    
+}
+
+
+
+.two{
+    background-color:#D5D9E3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    height: 500px;
+    gap: 45px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+
+    div{
+        flex: 1;
+    }
+
+    .img{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 25px;
+    }
+
+    .img img{
+        width: 300px;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin-right: 120px;
+    }
+
+    .info{
+        margin-left: 30px;
+        h2{
+            font-size: 2rem;
+            color: $section-backgroundThree;
+            font-family: poppins-semiBold;
+        }
+
+        p{
+            font-family: poppins-regular;
+            max-width: 300px;
+
+        }
+        
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .two{
+        gap: 0px;
+        flex-direction: column;
+        padding: 50px 0;
+        height: 600px;
+
+        .img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .img img{
+            margin: 0;
+            width: 250px;
+        }
+
+        .info{
+
+            h2{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+
+        :last-child{
+           position: relative;
+           left: 50%;
+           transform: translateX(-50%);
+        }
+        }
+    }
+}
+
+
+
+footer{
+    background-color: $section-backgroundThree;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    div{
+        flex: 1;
+    }
+
+    .contact{
+
+        form{
+            display: flex;
+            flex-direction: column;
+            color: $btn-background;
+            font-size: 1.2rem;
+            input{
+                display: block;
+                height: 30px;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .map{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    footer{
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+}
+  
